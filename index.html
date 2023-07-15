@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ23FTW10Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QQ23FTW10Q'); 
+</script>
+
+<!-- Hotjar Tracking Code for https://mounikak.in/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3569904,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+  <title>Stock Tools | mounikak.in</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 25px 50px !important;
+    }
+    .nav-links {
+      font-family: Plus Jakarta Sans;
+      font-weight: 400;
+      font-size: 16px;
+      font-style: regular;
+      letter-spacing: 1px;
+      line-height: 24px;
+    }
+    .head-title {
+      font-weight: 800;
+      font-size: 18px;
+      font-family: Plus Jakarta Sans;
+      font-style: extrabold;
+      color: #000000;
+      letter-spacing: 3px;
+      line-height: 30px;
+    }
+    .logout-container {
+      display: flex;
+      justify-content: end;
+    }
+    .header-logout {
+
+      font-family: Plus Jakarta Sans;
+      font-weight: 400;
+      font-size: 16px;
+      font-style: regular;
+      letter-spacing: 1px;
+      line-height: 24px;
+    }
+
+    .main-page-wrap {
+      padding-top: 100px;
+    }
+    .search-page-wrap {
+      padding-top: 50px;
+    }
+
+    .search-title-wrap {
+      display: flex;
+      justify-content: center;
+    }
+    .main-title {
+      font-family: Plus Jakarta Sans;
+      font-weight: 400;
+      font-style: regular;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 1px;
+      line-height: 28px;
+    }
+    .main-heading {
+      font-family: Plus Jakarta Sans;
+      font-weight: 800;
+      font-style: extrabold;
+      font-size: 52px;
+      width: 40%;
+      text-align: center;
+    }
+
+    .main-heading span {
+      background: linear-gradient(to right, rgb(188, 12, 241), rgb(212, 4, 4));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .search-title {
+      color: #287094;
+      font-weight: 800;
+      font-size: 18px;
+      font-family: Plus Jakarta Sans;
+      font-style: extrabold;
+      letter-spacing: 3px;
+      line-height: 30px;
+
+    }
+    .field-left-group {
+      padding: 50px 100px 0px 300px;
+    }
+    .field-right-group {
+      padding: 50px 300px 0px 100px;
+    }
+    .field-label {
+      font-weight: 500;
+      font-size: 13px;
+      font-family: Plus Jakarta Sans;
+      font-style: medium;
+      letter-spacing: 3px;
+      line-height: 30px;
+
+    }
+    .form-label span {
+      color: red;
+    }
+    .button-wrap {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+    .button-submit {
+      color: white;
+      background-color: #287094 !important;
+      border-color: #287094 !important;
+      padding: 10px 30px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    #error-ticker {
+      color: red;
+      font-size: 16px;
+      font-weight: 500;
+      padding-top: 5px;
+    }
+    .cursor-pointer {
+      cursor: pointer;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 0px !important;
+      color: #287094;
+      box-shadow: 0px 6px 11px 5px gray;
+      background-color: white;
+      z-index: 100;
+      font-family: Plus Jakarta Sans;
+      font-weight: 400;
+      font-style: regular;
+      font-size: 14px;
+    }
+    .margin-padding-0 {
+      margin: 0;
+      padding: 0;
+    }
+
+    th {
+      font-weight: 500;
+      font-size: 16px;
+      font-family: Plus Jakarta Sans;
+      font-style: bold;
+      letter-spacing: 3px;
+      line-height: 30px;
+    }
+
+    td{
+      font-weight: 500;
+      font-size: 13px;
+      font-family: Plus Jakarta Sans;
+      font-style: medium;
+      letter-spacing: 3px;
+      line-height: 30px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header class="row margin-padding-0 header">
+    <div class="col-xl-4">
+      <span class="head-title"><a href="#" style="text-decoration:none;color:black;">STOCK TOOLS</a></span>
+    </div>
+    <div class="col-xl-4">
+      <div id="nav-bars" class="row">
+        <div class="col-xl-4 nav-links cursor-pointer"><a href="#" style="text-decoration:none;color:black;" >Features</a></div>
+        <div class="col-xl-4 nav-links cursor-pointer"><a href="#" style="text-decoration:none;color:black;" >Pricing</a></div>
+        <div class="col-xl-4 nav-links cursor-pointer"><a href="https://mounikak.in" style="text-decoration:none;color:black;" >About Us</a></div>
+      </div>
+    </div>
+    <div class="col-xl-4 logout-container">
+      <div id="login">
+        <span class="pe-3 header-logout cursor-pointer" onclick="login()">Login</span>
+        <button class="btn btn-dark cursor-pointer">Signup</button>
+      </div>
+      <div id="logout">
+        <button id="search-button" class="btn btn-primary button-submit me-4" onclick="searchAgain()">Search Again</button>
+        <span class="header-logout cursor-pointer" onclick="logout()">Logout</span>
+      </div>
+    </div>
+  </header>
+  <div class="row margin-padding-0 app-body">
+    <div id="main-page" class="row main-page-wrap">
+      <div class="col-xl-12 search-title-wrap">
+        <h5 class="main-title">An intelligent tool made for profit rate optimization</h5>
+      </div>
+      <div class="col-xl-12 search-title-wrap mt-3">
+        <h1 class="main-heading">Increase your stock returns <span>using technology</span></h1>
+      </div>
+      <div class="col-xl-12 search-title-wrap mt-4">
+        <button class="btn btn-dark">Create Account</button>
+      </div>
+      <div class="col-xl-12 search-title-wrap mt-4">
+        <h5 class="main-title">No Payment method required | No hidden fee</h5>
+      </div>
+      <div class="col-xl-12 search-title-wrap">
+        <a href="#"><img src="banner.png" alt="img"></a>
+      </div>
+    </div>
+    <div id="search-page" class="row search-page-wrap">
+      <div class="col-xl-12 search-title-wrap">
+        <h5 class="search-title">SEARCH YOUR STOCK PRICE</h5>
+      </div>
+      <div class="col-xl-6">
+        <div class="field-left-group">
+          <label for="ticker" class="form-label field-label">ENTER TICKER <span>*</span></label>
+          <input type="text" class="form-control" placeholder="Enter Ticker" id="ticker" required aria-describedby="ticker">
+          <span id="error-ticker">Ticker is required *</span>
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="field-right-group">
+          <label for="range" class="form-label field-label">ENTER RANGE</label>
+          <input type="text" class="form-control" placeholder="Enter Range" id="range" aria-describedby="range">
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="field-left-group">
+          <label for="fromDate" class="form-label field-label">FROM DATE</label>
+          <input type="date" class="form-control" id="fromDate" aria-describedby="fromDate">
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="field-right-group">
+          <label for="toDate" class="form-label field-label">TO DATE</label>
+          <input type="date" class="form-control" id="toDate" aria-describedby="toDate">
+        </div>
+      </div>
+      <div class="col-xl-12 button-wrap">
+        <button class="btn btn-primary button-submit" onclick="searchStockData()">Submit</button>
+      </div>
+    </div>
+    <div id="search-results">
+      <div class="col-xl-12 search-title-wrap d-flex justify-content-start container">
+        
+      </div>
+      <div class="col-xl-12 search-title-wrap">
+        <h5 class="search-title">STOCK SEARCH RESULTS</h5>
+      </div>
+      <div class="container col-xl-12">
+        <table class="table table-striped mt-4">
+          <thead>
+            <tr>
+              <th>Time Stamp</th>
+              <th>Open</th>
+              <th>High</th>
+              <th>Low</th>
+              <th>Close</th>
+              <th>Volume</th>
+              <th>Transactions</th>
+              <th>Volume Avg.</th>
+            </tr>
+          </thead>
+          <tbody id="stockData">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-padding-0 footer">
+    <div class="col-xl-12 search-title-wrap">
+      <span>&#169; Mounika Kundeti, Y20AIT460, Department of Information Technology, Bapatla Engineering College</span>
+    </div>
+  </div>
+  <script>
+    document.getElementById('logout').style.display="none";
+    document.getElementById("error-ticker").style.display="none";
+    document.getElementById('search-page').style.display="none";
+    document.getElementById('search-results').style.display = 'none';
+    document.getElementById('search-button').style.display = 'none';
+    // Define your API key and the stock symbol'
+    const apiKey = 'EmGB2sNzaAZkjVztWOsOMFEMYxLtyTzU';
+    function login() {
+      document.getElementById('nav-bars').style.display="none";
+      document.getElementById('logout').style.display="block";
+      document.getElementById('login').style.display="none";
+      document.getElementById('search-page').style.display="flex";
+      document.getElementById('main-page').style.display = "none";
+      document.getElementById('search-results').style.display = 'none';
+      document.getElementById('search-button').style.display = 'none';
+    }
+    function logout() {
+      document.getElementById('nav-bars').style.display="flex";
+      document.getElementById('logout').style.display="none";
+      document.getElementById('login').style.display="block";
+      document.getElementById('search-page').style.display="none";
+      document.getElementById('main-page').style.display = "block";
+    }
+    function searchAgain() {
+      document.getElementById('search-page').style.display = 'flex';
+      document.getElementById('search-results').style.display = 'none';
+      document.getElementById('search-button').style.display = 'none';
+    }
+    function searchStockData(){
+      const ticker = document.getElementById("ticker").value;
+      const range = document.getElementById("range").value || 1;
+      const fromDate = document.getElementById("fromDate").value || '2023-01-01';
+      const toDate = document.getElementById("toDate").value || '2023-07-06';
+
+      if (!ticker) {
+        document.getElementById("error-ticker").style.display="block";
+        return;
+      } else {
+        $.ajax({
+          url: `https://api.polygon.io/v2/aggs/ticker/${ticker.toUpperCase()}/range/${range}/day/${fromDate}/${toDate}?apiKey=${apiKey}`,
+          method: 'GET',
+          success: function (data) {
+            let tableBody = '';
+            if (data && data.results && data.results.length) {
+              data.results.forEach(bar => {
+                tableBody = tableBody + `
+                  <tr>
+                    <td>${bar.t}</td>
+                    <td>${bar.o}</td>
+                    <td>${bar.h}</td>
+                    <td>${bar.l}</td>
+                    <td>${bar.c}</td>
+                    <td>${bar.v}</td>
+                    <td>${bar.t}</td>
+                    <td>${bar.vw}</td>
+                  </tr>
+                `;
+              });
+            } else {
+              tableBody = '<tr><td colspan="6">No Data</td></tr>';
+            }
+            document.getElementById('stockData').innerHTML = tableBody;
+            document.getElementById('search-page').style.display = 'none';
+            document.getElementById("error-ticker").style.display="none";
+            document.getElementById('search-button').style.display = 'inline';
+            document.getElementById('search-results').style.display = 'block';
+          },
+          error: function (error) {
+            document.getElementById('stockData').innerHTML = '<tr><td colspan="6">No Data</td></tr>';
+            document.getElementById('search-page').style.display = 'none';
+            document.getElementById("error-ticker").style.display="none";
+            document.getElementById('search-button').style.display = 'inline';
+            document.getElementById('search-results').style.display = 'block';
+          }
+        });
+      }
+      // Fetch stock market bars data
+    }
+  </script>
+</body>
+</html>
